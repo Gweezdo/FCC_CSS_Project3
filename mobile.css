@@ -1,0 +1,179 @@
+
+/* Responsive css to show the horizontal menu items for larger browser widths by default: */
+
+/* @media (min-width: 490px) {
+    #header #nav-bar a {
+    float: left;
+  }
+  
+  #header #nav-bar {
+    margin-top: 0.5em 0em 0em 0em;
+    padding: 0.em 0em 0em 0em;
+  }
+  
+  #header #nav-bar {
+    clear: none;
+    float: right;
+    max-height: none;
+  }
+  
+    #header .menu-icon {
+    display: none;
+  }
+} */
+
+/* styling for the burger menu "icon" */
+
+#header .menu-icon {
+  cursor: pointer;
+  display: none;
+  float: right;
+  padding: 0.8rem 0.8rem 0.8rem 0.8rem;
+  margin: 1.8rem 0.6rem 0.5rem 0.5rem;
+  position: relative;
+  user-select: none;
+  /*   background: blue; */
+}
+
+#header .menu-icon .navicon {
+  background: red;
+  display: none;
+  height: 0.3rem;
+  position: relative;
+  transition: background .2s ease-out;
+  width: 2.5rem;
+}
+
+#header .menu-icon .navicon:before,
+#header .menu-icon .navicon:after {
+  background: black;
+  content: '';
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all .2s ease-out;
+  width: 100%;
+}
+
+#header .menu-icon .navicon:before {
+  top: 0.7rem;
+}
+
+#header .menu-icon .navicon:after {
+  top: -0.7rem;
+}
+
+/*This hides the default checkbox associated with "<input type="checkbox> element */
+#header .menu-btn {
+  display: none;
+}
+
+/* Following code denotes what happens when the burger menu is clicked. */
+
+#header .menu-btn:checked ~ #nav-bar {
+  max-height: 27.0rem;
+}
+
+#header .menu-btn:checked ~ .menu-icon .navicon {
+  background: transparent;
+}
+
+#header .menu-btn:checked ~ .menu-icon .navicon:before {
+  transform: rotate(-45deg);
+}
+
+#header .menu-btn:checked ~ .menu-icon .navicon:after {
+  transform: rotate(45deg);
+}
+
+#header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+#header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+  top: 0;
+}
+
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 480px)
+and (-webkit-min-device-pixel-ratio: 1){
+  #header h1 {
+    display: none;
+  }
+}
+
+@media only screen 
+and (min-device-width : 481px) 
+and (max-device-width : 650px)
+and (-webkit-min-device-pixel-ratio: 1){
+  #header h1 {
+    display: block;
+  }
+}
+
+
+
+
+
+
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 650px)
+and (-webkit-min-device-pixel-ratio: 1){
+
+  #product-container01, #product-container02, #product-container03{
+    flex-direction: column;
+  }
+  
+  .video-container {
+    width: 98%;
+    height: 56.25%;
+    margin: 1% 1%;
+  }
+  
+  .specs{
+    width: 98%;
+    margin: 1% 1%;
+  }
+  
+  iframe {
+    width: 32.0rem;
+    height: 18.0rem;
+    /* background-color: red; */
+  }
+
+  #header .menu-icon {
+    display: block;
+  }
+  
+  #header .menu-icon .navicon {
+    display: block;
+  }
+}
+
+
+
+
+/* Media query that only display the burger menu on screen widths less than 480px wide */
+
+@media only screen 
+and (min-device-width : 651px)
+/* and (max-device-width : 650px)*/ { 
+    
+  
+  #header #nav-bar a {
+    float: left;
+  }
+  
+  #header #nav-bar {
+    /* margin-top: 1rem 10rem 0 0; */
+  }
+  
+  #header #nav-bar {
+    clear: none;
+    float: right;
+    max-height: none;
+  }
+  
+
+  
+  
+}

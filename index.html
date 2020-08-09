@@ -1,163 +1,171 @@
-<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
-
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="desktop.css">
+  <link rel="stylesheet" href="mobile.css">
+  <title>Pixel Monitors</title>
+</head>
 
-<body>
 
-  <head>
-      <link rel="stylesheet" href="desktop.css">
-  </head>
-
-  <header id="header">
-    <a href="#"><img id="header-img" src="https://image.flaticon.com/icons/svg/1170/1170586.svg" alt="Pixel Monitors Logo"></a>
-    <a href="#" class="h1"><h1>Pixel Monitors</h1></a>
-
-    <input class="menu-btn" type="checkbox" id="menu-btn">
-    <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
-
-    <nav id="nav-bar" class="menu">
-      <a class="nav-link" href="#home">Home</a>
-      <a class="nav-link" href="#about">About</a>
-      <a class="nav-link" href="#products">Products</a>
-      <a class="nav-link" href="#contact">Contact</a>
-    </nav>
-  </header>
-
-  <main class="main">
-    <h2 id="home">Home</h2>
-    <p1> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-      dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p1>
-    <hr>
-
-    <h2 id="about">About</h2>
-    <p1> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-      dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p1>
-    <hr>
-
-    <div id="products">
-      <h2>Product List</h2>
-
-      <h3>1) Entry Level Gamer - Acer Predator XB241H</h3>
-      <div id="product-container01">
-        <div class="video-container">
-          <div class="vid">
-            <iframe id="video" src="https://www.youtube.com/embed/25zUNU8xFww"></iframe>
-          </div>
-          <div class="vid-price">
-            <p>Price: AUD500</p> 
-            <div>
-              <button class="buy-button" type="submit">Buy Now</button>
-            </div>
-          </div>
-        </div>  
-        <div class="specs">
-          <h4>Monitor Specification</h4>
-              <ul>
-                <li>Maximum Resolution: 1920x1080p (Full HD)</li>
-                <li>Aspect Ratio: 16:9</li>
-                <li>Response Time: 1 ms GTG</li>
-                <li>Overclock Refresh Rate: 180 Hz</li>
-                <li>Color Supported: 16.7 Million</li>
-                <li>Brightness: 350 nit</li>
-                <li>Backlight: LED</li>
-                <li>Viewing Angles: 170° Horizontal / 160° Vertical</li>
-                <li>Panel Type: TN (Twisted Nematic Film)</li>
-                <li>Stand: Tilt (-5°~35°) / Swivel (30°) / Height adj (5.91")</li>
-                <li>Speakers: 2 x 2 W</li>
-                <li>Ports & Connectors: HDMI 1.2</li>
-                <li>Power: 28 W (ENERGY STAR® On)</li>
-                <li>Tearing Prevention Technology: NVIDIA® G-SYNC®</li>
-                <li>VESA Compatible: (Yes)</li>
-                <li>Dimensions (W x H x D): 22.32" x 13.22" x 2.39" / 22.3" x 21.3" x 10.6" (with stand)</li>
-              </ul>
-        </div>
-      </div>
-      <hr>
-      
-      <h3>2) Mid-Level Gamer - Acer Predator XB271HU</h3>
-      <div id="product-container02">
-        <div class="video-container">
-          <div class="vid">
-            <iframe id="video2" src="https://youtube.com/embed/6CiqiRQcHmo"></iframe>
-          </div>
-          <div class="vid-price">
-            <p>Price: AUD700</p> 
-            <div>
-              <button class="buy-button" type="submit">Buy Now</button>
-            </div>
-          </div>
-        </div>  
-        <div class="specs">
-          <h4>Monitor Specification</h4>
-            <ul>
-            <li>Maximum Resolution: 2560x1440p (WQHD)</li>
-            <li>Aspect Ratio: 16:9</li>
-            <li>Response Time: 4 ms GTG</li>
-            <li>Overclock Refresh Rate: 165 Hz</li>
-            <li>Brightness: 350 cd/m²</li> 
-            <li>Backlight: LED</li>
-            <li>Panel Type: IPS (In-plane Switching)</li>
-            <li>Viewing Angles: 178° Horizontal / 178° Vertical</li>
-            <li>Speakers: 2 x 2 W</li>
-            <li>Ports & Connectors: HDMI 1.2 / 5x USB 3.0</li>
-            <li>Tearing Prevention Technology: NVIDIA® G-SYNC®</li>
-          </ul>
-        </div>
-      </div>
-      <hr>
-
-      <h3>3) Hardcore Gamer - Acer Predator X34P</h3>
-      <div id="product-container03">
-        <div class="video-container">
-          <div class="vid">
-            <iframe id="video3" src="https://www.youtube.com/embed/PlSdWR_xI2k"></iframe>
-          </div>
-          <div class="vid-price">
-            <p>Price: AUD1000</p> 
-            <div>
-              <button class="buy-button" type="submit">Buy Now</button>
-            </div>
-          </div>
-        </div>  
-        <div class="specs">
-          <h4>Monitor Specification</h4>
-          <ul>
-            <li>Maximum Resolution: (UW-QHD)3440 x 1440@100 Hz</li>
-            <li>Aspect Ratio: 21:9</li>
-            <li>Response Time: 4 ms GTG</li>
-            <li>Overclock Refresh Rate: 120 Hz</li>
-            <li>Color Supported: 1.07 Billion</li>
-            <li>Brightness: 300 cd/m²</li>
-            <li>Backlight: LED</li>
-            <li>Viewing Angles: 178° Horizontal / 178° Vertical</li>
-            <li>Panel Type: IPS (In-plane Switching)</li>
-            <li>Stand: Tilt (-5°~35°) / Swivel (30°) / Height adj (130mm)</li>
-            <li>Speakers: 2 x 7 W</li>
-            <li>Ports & Connectors: 1x DisplayPort / 1x HDMI®-in / HDMI® / 5x USB 3.0</li>
-            <li>Power: 57 W (ENERGY STAR® On)</li>
-            <li>Tearing Prevention Technology: NVIDIA® G-SYNC®</li>
-            <li>VESA Compatible: (Yes)</li>
-            <li>Dimensions (W x H x D): 817 mm x 570.70 mm x 299 mm</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-    <hr>
-  </main>
   
 
-  <footer class="footer">
-    <h2 id="contact">Contact Us</h2>
-    <form id="form" action="https://www.freecodecamp.com">
-      <label for="email" id="email-label">Email Address:</label>
-      <input id="email" type="email" placeholder="Enter your Email Address" name="email" required>
-      <br>
-      <input id="submit" type="submit"></input>
+<body>
+  <div class="mainContainer">
 
-    </form>
-  </footer>
+    <header id="header">
+      <a href="#"><img id="header-img" src="https://image.flaticon.com/icons/svg/1170/1170586.svg" alt="Pixel Monitors Logo"></a>
+      <a href="#" class="h1"><h1>Pixel Monitors</h1></a>
+
+      <input class="menu-btn" type="checkbox" id="menu-btn">
+      <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+
+      <nav id="nav-bar" class="menu">
+        <a class="nav-link" href="#home">Home</a>
+        <a class="nav-link" href="#about">About</a>
+        <a class="nav-link" href="#products">Products</a>
+        <a class="nav-link" href="#contact">Contact</a>
+      </nav>
+    </header>
+  
+
+    <main class="main">
+      <h2 id="home">Home</h2>
+      <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+        dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      <hr>
+
+      <h2 id="about">About</h2>
+      <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+        dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      <hr>
+
+      <div id="products">
+        <h2>Product List</h2>
+
+        <h3>1) Entry Level Gamer - Acer Predator XB241H</h3>
+        <div id="product-container01">
+          <div class="video-container">
+            <div class="vid">
+              <iframe id="video" src="https://www.youtube.com/embed/25zUNU8xFww"></iframe>
+            </div>
+            <div class="vid-price">
+              <p>Price: $500.00</p> 
+              <div>
+                <button class="buy-button" type="submit">Buy Now</button>
+              </div>
+            </div>
+          </div>  
+          <div class="specs">
+            <h4>Monitor Specification</h4>
+                <ul>
+                  <li>Maximum Resolution: 1920x1080p (Full HD)</li>
+                  <li>Aspect Ratio: 16:9</li>
+                  <li>Response Time: 1 ms GTG</li>
+                  <li>Overclock Refresh Rate: 180 Hz</li>
+                  <li>Color Supported: 16.7 Million</li>
+                  <li>Brightness: 350 nit</li>
+                  <li>Backlight: LED</li>
+                  <li>Viewing Angles: 170° Horizontal / 160° Vertical</li>
+                  <li>Panel Type: TN (Twisted Nematic Film)</li>
+                  <li>Stand: Tilt (-5°~35°) / Swivel (30°) / Height adj (5.91")</li>
+                  <li>Speakers: 2 x 2 W</li>
+                  <li>Ports & Connectors: HDMI 1.2</li>
+                  <li>Power: 28 W (ENERGY STAR® On)</li>
+                  <li>Tearing Prevention Technology: NVIDIA® G-SYNC®</li>
+                  <li>VESA Compatible: (Yes)</li>
+                  <li>Dimensions (W x H x D): 22.32" x 13.22" x 2.39" / 22.3" x 21.3" x 10.6" (with stand)</li>
+                </ul>
+          </div>
+        </div>
+        <hr>
+        
+        <h3>2) Mid-Level Gamer - Acer Predator XB271HU</h3>
+        <div id="product-container02">
+          <div class="video-container">
+            <div class="vid">
+              <iframe id="video2" src="https://youtube.com/embed/6CiqiRQcHmo"></iframe>
+            </div>
+            <div class="vid-price">
+              <p>Price: $700.00</p> 
+              <div>
+                <button class="buy-button" type="submit">Buy Now</button>
+              </div>
+            </div>
+          </div>  
+          <div class="specs">
+            <h4>Monitor Specification</h4>
+              <ul>
+              <li>Maximum Resolution: 2560x1440p (WQHD)</li>
+              <li>Aspect Ratio: 16:9</li>
+              <li>Response Time: 4 ms GTG</li>
+              <li>Overclock Refresh Rate: 165 Hz</li>
+              <li>Brightness: 350 cd/m²</li> 
+              <li>Backlight: LED</li>
+              <li>Panel Type: IPS (In-plane Switching)</li>
+              <li>Viewing Angles: 178° Horizontal / 178° Vertical</li>
+              <li>Speakers: 2 x 2 W</li>
+              <li>Ports & Connectors: HDMI 1.2 / 5x USB 3.0</li>
+              <li>Tearing Prevention Technology: NVIDIA® G-SYNC®</li>
+            </ul>
+          </div>
+        </div>
+        <hr>
+
+        <h3>3) Hardcore Gamer - Acer Predator X34P</h3>
+        <div id="product-container03">
+          <div class="video-container">
+            <div class="vid">
+              <iframe id="video3" src="https://www.youtube.com/embed/PlSdWR_xI2k"></iframe>
+            </div>
+            <div class="vid-price">
+              <p>Price: $1000.00</p> 
+              <div>
+                <button class="buy-button" type="submit">Buy Now</button>
+              </div>
+            </div>
+          </div>  
+          <div class="specs">
+            <h4>Monitor Specification</h4>
+            <ul>
+              <li>Maximum Resolution: (UW-QHD)3440 x 1440@100 Hz</li>
+              <li>Aspect Ratio: 21:9</li>
+              <li>Response Time: 4 ms GTG</li>
+              <li>Overclock Refresh Rate: 120 Hz</li>
+              <li>Color Supported: 1.07 Billion</li>
+              <li>Brightness: 300 cd/m²</li>
+              <li>Backlight: LED</li>
+              <li>Viewing Angles: 178° Horizontal / 178° Vertical</li>
+              <li>Panel Type: IPS (In-plane Switching)</li>
+              <li>Stand: Tilt (-5°~35°) / Swivel (30°) / Height adj (130mm)</li>
+              <li>Speakers: 2 x 7 W</li>
+              <li>Ports & Connectors: 1x DisplayPort / 1x HDMI®-in / HDMI® / 5x USB 3.0</li>
+              <li>Power: 57 W (ENERGY STAR® On)</li>
+              <li>Tearing Prevention Technology: NVIDIA® G-SYNC®</li>
+              <li>VESA Compatible: (Yes)</li>
+              <li>Dimensions (W x H x D): 817 mm x 570.70 mm x 299 mm</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <hr>
+    </main>
+
+    <footer class="footer">
+      <h2 id="contact">Contact Us</h2>
+      <form id="form" action="#">
+        <label for="email" id="email-label">Email Address:</label>
+        <input id="email" type="email" placeholder="Enter your email address" name="email" required>
+        <br>
+        <input id="submit" type="submit"></input>
+      </form>
+    </footer>
+  </div>
+
+  <div id="footer1">
+      <p>Developed by Zjak Theron</p>
+  </div>
 
 </body>
-
 </html>
